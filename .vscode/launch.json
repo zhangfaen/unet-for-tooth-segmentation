@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: train tooth",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/unet-test/tooth-seg/",
+            "program": "train.py",
+            "args": ["--epochs", "1",  "--batch-size", "6", "--scale", "1",  "--trained-model-file", "trained-models/unet-model-scale1.0-batchsize5.pth"],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Python: current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+
+
+    ]
+}
