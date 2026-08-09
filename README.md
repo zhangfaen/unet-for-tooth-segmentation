@@ -1,3 +1,5 @@
+
+
 # U-Net: Semantic segmentation with PyTorch
 <img src="https://raw.githubusercontent.com/zhangfaen/common/master/unet-logo.png" />
 
@@ -12,6 +14,7 @@ Customized implementation of the [U-Net](https://arxiv.org/abs/1505.04597) in Py
 ```bash
 nohup python train.py --epochs 10 --batch-size 6 --scale 1 --trained-model-file trained-models/unet-model-scale1.0-batchsize5.pth &
 ```
+Note: Training progress and metrics are automatically tracked via Weights & Biases (wandb).
 
 ### Test
 
@@ -35,4 +38,3 @@ Original paper by Olaf Ronneberger, Philipp Fischer, Thomas Brox:
 [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
 
 ![network architecture](https://i.imgur.com/jeDVpqF.png)
-
